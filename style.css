@@ -1,0 +1,29 @@
+html{
+    background-color: lightgray;
+}
+div {
+  /* width: 105mm;height: 148.5mm; */
+  
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  top: calc(50% - 150px);
+  left: 50%;
+  position: absolute;
+  transition: all 3s;
+
+  transform-origin: center left;
+  transform: rotateX(-10deg);
+
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+div:first-of-type,
+div:last-of-type {
+  background-color: rgb(51, 49, 131);
+}
+
+/* div:hover{
+    transform: rotateY(180deg) rotateX(10deg);
+} */
