@@ -1,29 +1,43 @@
 html{
     background-color: lightgray;
 }
-div {
+#konyv > div{
   /* width: 105mm;height: 148.5mm; */
   
   width: 200px;
   height: 300px;
-  background-color: white;
-  border: 1px solid black;
+  background-color: transparent;
+
   top: calc(50% - 150px);
   left: 50%;
   position: absolute;
   transition: all 3s;
 
-  transform-origin: center left;
-  transform: rotateX(-10deg);
-
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  transform-origin: left;
 }
-div:first-of-type,
-div:last-of-type {
+
+#konyv > div:first-of-type > div,
+#konyv > div:last-of-type > div{
   background-color: rgb(51, 49, 131);
+  /* background-color: transparent; */
+}
+#konyv > div > div{
+    backface-visibility: hidden;
 }
 
-/* div:hover{
-    transform: rotateY(180deg) rotateX(10deg);
-} */
+
+.jobb, .bal{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    /* top: calc(50% - 150px); */
+    position: absolute;
+    transition: all 3s;
+  
+    transform-origin: left;
+    /* transform: rotateX(-10deg); */
+  
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
