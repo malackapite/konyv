@@ -1,0 +1,40 @@
+{
+    "oldalak":[
+        {
+            "jobb":"<h1>könyv</h1>",
+            "bal":""
+        },
+        {
+            "jobb":"<p>asd</p>",
+            "bal":"<img src=\"panel1.png\" alt=\"\">"
+        },
+        {
+            "jobb":"<img src=\"panel2.png\" alt=\"\">",
+            "bal":"<img src=\"panel3.png\" alt=\"\">"
+        },
+        {
+            "jobb":"<img src=\"panel4.png\" alt=\"\">",
+            "bal":"<p>walk the cat <br>i walk my cat <br>then my cat <br>can walk me back</p>"
+        },
+        {
+            "jobb":"<p>menő szöveg</p><br><p>alsó szöveg</p>",
+            "bal":""
+        },
+        {
+            "jobb":"<p>asd</p>",
+            "bal":"<img src=\"https://media.tenor.com/aaEMtGfZFbkAAAAi/rat-spinning.gif\" alt=\"\">"
+        },
+        {
+            "jobb":"",
+            "bal":""
+        },
+        {
+            "jobb":"",
+            "bal":""
+        },
+        {
+            "jobb":"",
+            "bal":""
+        }
+    ]
+}
