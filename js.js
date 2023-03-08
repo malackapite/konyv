@@ -2,7 +2,7 @@ hol = 0;
 konyv=document.getElementsByClassName("oldal")
 
 function lapoz(nth) {
-    
+ 
   if (nth == hol) {
     konyv[hol].style.transform = "rotateY(180deg)";
     konyv[hol].getElementsByTagName("div")[0].style.transform = "rotateY(-180deg)";
