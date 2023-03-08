@@ -1,6 +1,6 @@
 import json from "./tartalom.json" assert { type: "json" };
 
-document.body.innerHTML+=`<div id="konyv"></div>`
+document.body.innerHTML+=`<div id="konyv" onmousemove="mozog()"></div>`
 for (let ix = 0; ix < json.oldalak.length; ix++) {
     document.getElementById("konyv").innerHTML+=`
     <div class="oldal" onclick="lapoz(${ix})" style="z-index: ${-ix};">

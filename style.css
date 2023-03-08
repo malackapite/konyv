@@ -4,8 +4,16 @@
 html{
     background-color: lightgray;
 }
+#konyv{
+  position: absolute;
+  top: calc(50% - 300px);
+  left: 50%;
+  transform: /*translate3d(0px, 5%, -264px)*/ rotateX(calc(27deg + var(--egerY))) rotateZ(calc(0deg + var(--egerX)));
+}
 #konyv > div{
   perspective: 1300px;
+  /* transform: rotateX(var(--egerY)) rotateZ(var(--egerX)); */
+  
 }
 #konyv > div{
   /* width: 105mm;height: 148.5mm; */
@@ -13,9 +21,8 @@ html{
   width: 400px;
   height: 600px;
   background-color: transparent;
-
-  top: calc(50% - 300px);
-  left: 50%;
+  
+  
   position: absolute;
   transition: all 3s;
 
@@ -24,9 +31,10 @@ html{
 
 #konyv > div:first-of-type > div,
 #konyv > div:last-of-type > div{
-  background-color: #2e1800;
-  box-shadow: inset -4px -4px 4px 1px #635648, inset -7px -7px 4px 0 #221b14;
-  color: white;
+    background-color: #2e1800;
+    box-shadow: inset -4px -4px 4px 1px #635648, inset -7px -7px 4px 0 #221b14;
+    justify-content: center;
+    color: white;
     width: 400px;
     height: 600px;
 }
@@ -37,8 +45,18 @@ html{
 .bal *{
   transform: scaleX(-1);
 }
-
+.bal{
+  justify-content: flex-end;
+}
+.bal:hover{
+  transform: rotateY(-20deg);
+}
+.jobb:hover{
+  transform: rotateY(-20deg);
+}
 .jobb, .bal{
+    display: flex;
+    align-items: flex-start;
     width: 400px;
     height: 600px;
     background-color: white;
